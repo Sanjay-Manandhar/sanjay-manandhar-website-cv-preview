@@ -1,0 +1,140 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    overflow-x: hidden;
+}
+header {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #ffcc70;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: #ffcc70;
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg') center/contain no-repeat, #0f2027;
+    position: relative;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 1.2s ease-out;
+}
+.hero h1 {
+    font-size: 2.5em;
+}
+.btn {
+    background: #ffcc70;
+    color: #000;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffcc70;
+}
+.skill-grid, .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.skill-card, .project-card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255,204,112,0.2);
+}
+.project-card {
+    color: #ffcc70;
+    text-decoration: none;
+    font-weight: bold;
+}
+.project-card:hover {
+    color: #ffd98e;
+}
+a {
+    color: #ffcc70;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffd98e;
+}
+.timeline-item {
+    margin-bottom: 30px;
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease;
+}
+footer {
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+@keyframes fadeInUp {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
