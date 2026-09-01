@@ -17,8 +17,11 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -27,7 +30,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Hi, I'm <span>Sanjay Manandhar</span></h1>
-            <p>Mid-level Data Engineer | Python | AWS | ETL | Big Data</p>
+            <p>Data Engineer | Python | SQL | Airflow | AWS | ETL</p>
             <a href="#contact" class="btn">Contact Me</a>
             <a href="assets/Sanjay_Manandhar_Cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View CV</a>
             <a href="assets/Sanjay_Manandhar_Cv.pdf" download class="btn">Download CV</a>
@@ -37,7 +40,7 @@
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Mid-level Data Engineer with 3+ years of experience in designing and maintaining data infrastructure, developing data pipelines, and delivering analytical solutions. Skilled in Python, SQL, AWS, and various data engineering tools with a proven track record across healthcare, public sector, and financial domains.</p>
+        <p>Data Engineer with 4+ years of experience in designing and maintaining data infrastructure, developing data pipelines, and delivering analytical solutions. Skilled in Python, SQL, AWS, and various data engineering tools with a proven track record across telecom, healthcare, public sector, and financial domains.</p>
     </section>
 
     <!-- Skills Section -->
@@ -45,31 +48,108 @@
         <h2>Skills</h2>
         <div class="skill-grid">
             <div class="skill-card">Python (NumPy, Pandas, Airflow)</div>
-            <div class="skill-card">SQL, Bash, Git</div>
+            <div class="skill-card">SQL Server, Oracle, MongoDB</div>
+            <div class="skill-card">Apache Airflow, dbt, Docker</div>
             <div class="skill-card">AWS (S3, Redshift, EC2)</div>
             <div class="skill-card">ETL, Data Warehousing</div>
             <div class="skill-card">Apache Spark, Hadoop</div>
-            <div class="skill-card">Data Visualization</div>
         </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience">
         <h2>Professional Experience</h2>
+
+        <div class="timeline-item">
+            <h3>DishHome Pvt. Ltd. — Data Engineer</h3>
+            <span>August 29, 2025 – Present</span>
+            <p><strong><a href="https://portal.dishhome.com.np/" target="_blank" rel="noopener noreferrer">BIR</a> (SQL Server – Reporting &amp; Data Warehouse)</strong></p>
+            <ul>
+                <li>Designed and developed stored procedures for telecom reporting systems, including bulk/incremental refresh logic for POD performance, SME packages, and FIFA World Cup 2026 recharge/churn/bonus reporting</li>
+                <li>Optimized high-volume SQL Server procedures by rewriting CTE-based logic into sequential temp-table approaches, eliminating full table scans on large financial transaction tables</li>
+                <li>Built a multi-tier data reconciliation and validation engine (BNG-ICX mismatch detection) processing 300K+ records with cascading match logic</li>
+                <li>Designed dimensional data warehouse schema (fact/dimension tables) to support enterprise-wide telecom customer and distribution reporting</li>
+                <li>Diagnosed and resolved critical production issues in daily reporting jobs, improving pipeline reliability and data accuracy</li>
+            </ul>
+            <p><strong><a href="https://insights.dishhome.com.np/" target="_blank" rel="noopener noreferrer">Insights</a> (Data Engineering – Airflow, MongoDB, Data Mart)</strong></p>
+            <ul>
+                <li>Built and orchestrated end-to-end ETL pipelines using Apache Airflow, integrating Oracle, MongoDB, and SQL Server across the data platform</li>
+                <li>Developed a MongoDB-to-SQL Server migration pipeline using Airflow and dbt, consolidating 13+ collections into staging and data mart layers for analytics</li>
+                <li>Built cross-system reconciliation pipelines (vendor FTP-based) with automated data validation and portal upload workflows</li>
+                <li>Designed incremental/watermark-based and CDC data pipelines to sync high-volume datasets (SMS, dealer hierarchy, entitlement data) in near real-time</li>
+                <li>Set up and administered core Airflow infrastructure (Docker, CeleryExecutor, Oracle integration) from the ground up, establishing the ETL foundation for the platform</li>
+            </ul>
+        </div>
+
         <div class="timeline-item">
             <h3>Cedar Gate Technologies — Data Engineer/Data Analyst</h3>
             <span>Oct 2023 – May 2024</span>
-            <p>Queried and optimized large-scale healthcare datasets in Amazon Redshift, mentored junior personnel, standardized data using ETL tools, utilized AWS S3 for managing data, and applied CMS Data Code Sets for quality and risk adjustment reporting.</p>
+            <ul>
+                <li>Queried and optimized large-scale healthcare datasets in Amazon Redshift, supporting performance improvement initiatives</li>
+                <li>Mentored junior personnel on the U.S. healthcare data ecosystem and internal tooling practices</li>
+                <li>Standardized data using in-house ETL tools and modules to produce analysis-ready outputs</li>
+                <li>Utilized AWS S3 for data versioning and supported development of analytical software for client-facing insights</li>
+                <li>Applied CMS Data Code Sets (ICD-10, CPT-4, HCPCS, NDC, Provider Taxonomy Codes) and HEDIS/HCC methodologies for quality and risk adjustment reporting</li>
+            </ul>
         </div>
+
         <div class="timeline-item">
             <h3>Young Innovations Pvt. Ltd. — Data Intern to Junior Data Professional</h3>
             <span>Feb 2022 – Jul 2023</span>
-            <p>Processed survey data, automated data syncing, cleaned national census datasets, developed ETL pipelines, and built dashboards for public transparency.</p>
+            <ul>
+                <li>Processed survey data using Python and ODK, collaborating with field engineers to ensure clean, complete data collection (RVS)</li>
+                <li>Automated data syncing and updates through ODK Central for nationwide reporting (RVS)</li>
+                <li>Cleaned and standardized national census datasets using Python, creating analytical visualizations to support demographic research (Census Nepal)</li>
+                <li>Uploaded processed census data to AWS S3 for public portal distribution (Census Nepal)</li>
+                <li>Developed ETL pipelines to process public contract documents and built dashboards to visualize contract trends for public transparency (ResourceContracts)</li>
+            </ul>
         </div>
+
         <div class="timeline-item">
             <h3>Hazesoft Pvt. Ltd. — Data Science Intern to Data Scientist</h3>
             <span>Feb 2021 – Oct 2021</span>
-            <p>Designed ETL pipelines for NEPSE stock data, built ML models for classification tasks including fake news detection and gaming behavior categorization.</p>
+            <ul>
+                <li>Designed and implemented ETL pipelines for NEPSE stock data to support real-time analysis</li>
+                <li>Built machine learning models for classification tasks, including fake news detection and gaming behavior categorization</li>
+                <li>Performed data cleaning, preprocessing, and feature engineering on financial and text datasets to improve model accuracy</li>
+                <li>Conducted exploratory data analysis (EDA) to identify trends and patterns in stock market data</li>
+                <li>Collaborated with cross-functional teams to deploy and monitor model performance</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+<section id="certifications">
+    <h2>Certifications</h2>
+    <div class="skill-grid">
+        <a href="https://www.credly.com/go/LCDHqlol" target="_blank" rel="noopener noreferrer" class="skill-card cert-card">
+            <strong>Astronomer Certification: DAG Authoring for Apache Airflow 3</strong>
+            <span>Astronomer &middot; Issued Oct 2025</span>
+        </a>
+        <a href="assets/certificates/databricks-fundamentals-accreditation.pdf" target="_blank" rel="noopener noreferrer" class="skill-card cert-card">
+            <strong>Databricks Fundamentals Accreditation</strong>
+            <span>Databricks Academy &middot; Completed Aug 2026</span>
+        </a>
+    </div>
+</section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="timeline-item">
+            <h3>Tribhuvan University / Nepal Commerce Campus, Minbhawan</h3>
+            <span>Graduated 2021</span>
+            <p>Bachelor of Information Management (BIM), CGPA: 2.87</p>
+        </div>
+        <div class="timeline-item">
+            <h3>Prasadi Academy, Lalitpur</h3>
+            <span>2014</span>
+            <p>Higher Secondary Education Board (HSEB), 72.3%</p>
+        </div>
+        <div class="timeline-item">
+            <h3>Sudesha High School, Lalitpur</h3>
+            <span>2012</span>
+            <p>School Leaving Certificate, 76.63%</p>
         </div>
     </section>
 
@@ -77,12 +157,13 @@
     <section id="projects">
         <h2>Selected Projects</h2>
         <div class="project-grid">
+            <a href="https://portal.dishhome.com.np/" target="_blank" class="project-card">BIR Portal</a>
+            <a href="https://insights.dishhome.com.np/" target="_blank" class="project-card">Insights</a>
             <a href="https://rvs.ndrrma.gov.np" target="_blank" class="project-card">RVS Platform</a>
             <a href="https://censusnepal.cbs.gov.np" target="_blank" class="project-card">Census Nepal</a>
             <a href="https://resourcecontracts.org" target="_blank" class="project-card">Resource Contracts</a>
         </div>
     </section>
-    
 
     <!-- Contact Section -->
     <section id="contact">
